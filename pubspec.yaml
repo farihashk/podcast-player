@@ -1,0 +1,104 @@
+name: anytime
+description: Anytime Podcast Player
+
+version: 1.2.3+81
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+  flutter: 3.0.0
+
+dependencies:
+  auto_size_text: ^3.0.0
+  audio_service: ^0.18.9
+  audio_session: ^0.1.13
+  connectivity_plus: ^3.0.2
+  cupertino_icons: ^1.0.5
+  device_info_plus: ^4.0.0
+  expand_widget: ^3.1.0
+  extended_image: ^7.0.2
+  file_picker: ^4.6.1
+  flutter_dialogs: ^3.0.0
+  flutter_downloader: 1.10.1+2
+  flutter_html: ^3.0.0-alpha.6
+  flutter_html_svg: ^3.0.0-alpha.3
+  flutter_html_table: ^3.0.0-alpha.3
+  flutter_launcher_icons: ^0.11.0
+  flutter_spinkit: ^5.0.0
+  html: ^0.15.0
+  intl: ^0.17.0
+  just_audio: ^0.9.31
+  logging: ^1.0.2
+  meta: ^1.7.0
+  mp3_info: ^0.2.0
+  path: ^1.8.2
+  path_provider: ^2.0.11
+  path_provider_platform_interface: ^2.0.4
+  percent_indicator: 4.2.2
+  permission_handler: ^9.2.0
+  podcast_search: ^0.5.3
+  provider: ^6.0.3
+  rxdart: ^0.27.4
+  scrollable_positioned_list: ^0.3.2
+  sembast: ^3.1.2
+  share_plus: ^4.0.9
+  shared_preferences: ^2.0.12
+  sliver_tools: ^0.2.9
+  uni_links: ^0.5.1
+  url_launcher: ^6.1.5
+  xml: ^5.3.1
+
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  intl_generator: ^0.4.1
+  mockito: ^5.2.0
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  image_path_android: "assets/images/anytime-logo.png"
+  image_path_ios: "assets/images/anytime-logo-ios.png"
+  remove_alpha_ios: true
+  android: true
+  ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/anytime-logo.png
+    - assets/images/anytime-logo-s.png
+    - assets/images/anytime-placeholder-logo.png
+
+    # Certificate authorities
+    - assets/ca/lets-encrypt-r3.pem
+
+  fonts:
+    - family: SpaceMonoRegular
+      fonts:
+        - asset: assets/fonts/SpaceMono-Regular.ttf
+    - family: SpaceMonoBold
+      fonts:
+        - asset: assets/fonts/SpaceMono-Bold.ttf
+    - family: RobotoCondensedBold
+      fonts:
+        - asset: assets/fonts/RobotoCondensed-Bold.ttf
+    - family: RobotoRegular
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+    - family: MontserratMedium
+      fonts:
+        - asset: assets/fonts/Montserrat-Medium.otf
+    - family: MontserratRegular
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.otf
+    - family: MontserratBold
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.otf
+    - family: JostRegular
+      fonts:
+        - asset: assets/fonts/jost/Jost-Regular.ttf
