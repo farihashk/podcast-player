@@ -1,7 +1,3 @@
-// Copyright 2020 Ben Hills and the project contributors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'dart:io';
 
 import 'package:anytime/services/settings/mobile_settings_service.dart';
@@ -11,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:logging/logging.dart';
 
-// ignore_for_file: avoid_print
+
 void main() async {
   List<int> certificateAuthorityBytes = [];
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,10 +28,7 @@ void main() async {
   ));
 }
 
-/// The Let's Encrypt certificate authority expired at the end of September 2021. Android devices
-/// running v7.1.1 or earlier will no longer trust their root certificate which will cause issues
-/// when trying to fetch feeds and images from sites secured with LE. This routine is called to
-/// add the new CA to the trusted list at app start.
+/// Encrypt certificate authority expired at the end of September 2021. Android devices
 Future<List<int>> setupCertificateAuthority() async {
   List<int> ca = [];
 
