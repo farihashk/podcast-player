@@ -1,19 +1,13 @@
-// Copyright 2020 Ben Hills and the project contributors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
 
 import 'package:anytime/entities/episode.dart';
 import 'package:anytime/entities/podcast.dart';
 import 'package:anytime/entities/transcript.dart';
 import 'package:anytime/state/episode_state.dart';
 
-/// An abstract class that represent the actions supported by the chosen
-/// database or storage implementation.
+
 abstract class Repository {
-  /// General
   Future<void> close();
 
-  /// Podcasts
   Future<Podcast?> findPodcastById(num id);
 
   Future<Podcast?> findPodcastByGuid(String guid);
